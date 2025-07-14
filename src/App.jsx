@@ -38,7 +38,7 @@ function App() {
       <Route path="/appointments/edit" element={<EditAppointment />} />
       <Route path="/medical-records" element={<MedicalRecords />} />
       <Route path="/medical-records/view" element={<ViewRecord />} />
-      <Route path="/medical-records/edit" element={<EditRecord />} />
+      <Route path="/medical-records/edit" element={<EditRecord />} />                                                                                      
       <Route path="/medical-records/delete" element={<DeleteRecord />} />
       <Route path="/invoice" element={<Invoice />} />
       <Route path="/file-maintenance" element={<FileMaintenance />} />
