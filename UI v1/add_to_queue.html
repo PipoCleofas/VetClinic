@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start of head -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add to Queue</title>
+  <link rel="stylesheet" href="add_to_queue.css" /> <!-- Link to CSS file  -->
+  <script src="add_to_queue.js"></script> <!-- Link to JavaScript file -->
+</head>
+<!-- End of head -->
+
+<!-- Start of body -->
+<body>
+  <!-- Start of Header -->
+  <header>
+    <a href="landing_page.html">
+        <img src="images/pawsionate-logo.png" alt="Logo" class="logo" />
+    </a>
+
+    <!-- Start of Navigation Menu -->
+    <ul class="nav-menu">
+      <li><a href="landing_page.html">Home</a></li>
+      <li><a href="appointment.html">Appointment</a></li>
+      <li><a href="medical_records.html">Medical Records</a></li>
+      <li><a href="invoice.html">Invoice</a></li>
+      <li><a href="file_maintenance.html">File Maintenance</a></li>
+    </ul>
+    <!-- End of Navigation Menu -->
+
+    <div class="user">
+      <a href="#">
+        <img src="images/user_icon.png" class="user-photo" />
+      </a>
+    </div>
+  </header>
+  <!-- End of Header -->
+
+  <!-- Start of Main content -->
+  <main>
+  <div class="form-sections">
+   <!-- Owner Info -->
+    <div class="info-box">
+    <h2>Owner’s Information</h2>
+    <input type="text" placeholder="Owner Name" required />
+    <input type="text" placeholder="Contact No." required />
+    </div>
+
+    <!-- Ask how many pets -->
+    <div class="info-box">
+    <h2>How many pets?</h2>
+    <input type="number" id="petCount" min="1" max="100" placeholder="Enter number of pets" required />
+    <button class="btn blue" onclick="generatePetForms()">Confirm</button>
+    </div>
+
+    <!-- linked to add_to_queue.js to generate forms -->
+    <div id="petFormsContainer"></div>
+
+    <!-- Submit -->
+    <div class="form-footer">
+        <button class="btn red">Add to Queue</button>
+    </div>
+    </main>
+    <!-- End of Main content -->
+</body>
+<!-- End of body -->
+</html>

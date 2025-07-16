@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Appointment</title>
+  <link rel="stylesheet" href="appointment.css" />
+  <script src="add_appointment.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/pawsionate-logo.png" alt="Logo" class="logo" onclick="location.href='landing_page.html'" style="cursor: pointer;" />
+
+    <ul class="nav-menu">
+      <li><a href="landing_page.html">Home</a></li>
+      <li class="active"><a href="appointment.html">Appointment</a></li>
+      <li><a href="medical_records.html">Medical Records</a></li>
+      <li><a href="invoice.html">Invoice</a></li>
+      <li><a href="file_maintenance.html">File Maintenance</a></li>
+    </ul>
+
+    <div class="user">
+      <a href="#">
+        <img src="images/user_icon.png" class="user-photo" />
+      </a>
+    </div>
+  </header>
+
+
+  <main>
+  <section class="appointments-section">
+    <h2>Appointments</h2>
+
+    <div class="appointments-box">
+      <div class="appointments-header">
+        <label for="sort">Sort:</label>
+        <select id="sort">
+          <option>Newest to oldest</option>
+          <option>Oldest to newest</option>
+        </select>
+      </div>
+
+      <table class="appointments-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Contact #</th>
+            <th>Date & Time</th>
+            <th>Service</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Clyde Wylie T. Taruc</td>
+            <td>09486079988</td>
+            <td>April 28 - Morning</td>
+            <td>Grooming</td>
+            <td>
+              <button class="btn red">Add to Queue</button>
+              <button class="btn-icon">✎</button>
+            </td>
+          </tr>
+          <tr>
+            <td>John Clyde Wylie T. Taruc</td>
+            <td>09486079988</td>
+            <td>April 29 - Afternoon</td>
+            <td>Grooming</td>
+            <td>
+              <button class="btn red">Add to Queue</button>
+              <button class="btn-icon">✎</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+</body>
+</html>

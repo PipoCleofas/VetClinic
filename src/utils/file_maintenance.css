@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFF9DE;
+}
+
+/* Start of header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  gap: 20px;
+}
+/* End of header styles */
+
+.logo {
+  height: 200px;
+}
+
+/* Start of navigation styles */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu li {
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.nav-menu li a {
+  text-decoration: none; /* Remove underline */
+  color: black;       /* Default link color */
+  display: inline-block; /* Make the link fill the li */
+  padding: 5px 10px; 
+  border-radius: 10px; /* Rounded corners for links */
+  font-size: 20px;
+}
+
+.nav-menu li:hover a {
+  background-color: #f0f0f0; /* Light gray on hover */
+  border-radius: 30px; /* Rounded corners on hover */
+}
+
+.nav-menu .active a {
+  background-color: #FF6969; /* Active link color */
+  color: white; /* Active link text color */
+  border-radius: 30px; /* Rounded corners for active link */
+}
+/* End of navigation styles */
+
+/* Start of user profile styles */
+.user-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+/* End of user profile styles */

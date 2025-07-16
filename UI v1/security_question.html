@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forgot Password – MATCH</title>
+  <link rel="stylesheet" href="security_question.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="images/pawsionate-logo.png" alt="Logo" class="logo" />
+
+    <h1>Please answer your security<br>question to continue</h1>
+
+    <form action="reset_password.html" method="post">  <!-- Bridge to database to check security answer -->
+      <label for="security">Security Question</label>
+      <input type="text" id="security" name="security" value="In what city were you born?" readonly />
+
+      <label for="answer">Answer</label>
+      <input type="text" id="answer" name="answer" placeholder="Enter your answer" required />
+
+      <button type="submit" class="next-btn">Next</button>
+      <button class="back-btn" onclick="window.location.href='forgot-password.html'"> Back</button>
+    </form>
+  </div>
+</body>
+</html>

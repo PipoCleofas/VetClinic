@@ -1,0 +1,159 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFF9DE;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.logo {
+  height: 200px;
+}
+
+/* Start of navigation styles */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu li {
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.nav-menu li a {
+  text-decoration: none; /* Remove underline */
+  color: black;       /* Default link color */
+  display: inline-block; /* Make the link fill the li */
+  padding: 5px 10px; 
+  border-radius: 10px; /* Rounded corners for links */
+  font-size: 20px;
+}
+
+.nav-menu li:hover a {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.nav-menu .active a {
+  background-color: #FF6969; /* Active link color */
+  color: white; /* Active link text color */
+}
+/* End of navigation styles */
+
+/* Start of user profile styles */
+.user-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+/* End of user profile styles */
+
+/* Start of main content styles */
+main {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/* End of main content styles */
+
+/* Start of info box styles */
+.info-box {
+  min-width: 320px;
+  max-width: 500px;
+  margin: auto; 
+  padding: 25px 30px;
+  margin-top: 10px;
+  background: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.info-box input,
+.info-box select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+#petFormsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+/* End of info box styles */
+
+
+/* Start of button styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+/* Add to queue btn*/
+.btn.red {
+  background-color: #FF6969;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Create btn*/
+.btn.blue {
+  background-color: #A6D0DD;
+  color: white;
+  margin-top: 10px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* End of button styles */
+
+/* Start of fixed add to queue button */
+.form-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-sections {
+  gap: 40px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.form-footer {
+  margin-top: 30px;
+  text-align: center;
+}
+/* End of fixed add to queue button */

@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFF9DE;
+}
+
+/* Start of header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  gap: 20px;
+}
+/* End of header styles */
+
+.logo {
+  height: 200px;
+}
+
+/* Start of navigation styles */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu li {
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.nav-menu li a {
+  text-decoration: none; /* Remove underline */
+  color: black;       /* Default link color */
+  display: inline-block; /* Make the link fill the li */
+  padding: 5px 10px; 
+  border-radius: 10px; /* Rounded corners for links */
+  font-size: 20px;
+}
+
+.nav-menu li:hover a {
+  background-color: #f0f0f0; /* Light gray on hover */
+  border-radius: 30px; /* Rounded corners on hover */
+}
+
+.nav-menu .active a {
+  background-color: #FF6969; /* Active link color */
+  color: white; /* Active link text color */
+  border-radius: 30px; /* Rounded corners for active link */
+}
+/* End of navigation styles */
+
+/* Start of user profile styles */
+.user-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+/* End of user profile styles */
+
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+}
+
+.user-greeting span {
+  white-space: nowrap;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Start of main content styles */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+/* End of main content styles */
+
+/* Start of queue styles */
+.queue {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.queue h2 {
+  margin-top: 0;
+}
+/* End of queue styles */
+
+/* Start of Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+/* Buttons in Table */
+.btn.small {
+  padding: 6px 12px;
+  font-size: 0.85em;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+/* End of Table Styling */
+
+/* Start of Button Styles */
+.btn.done {
+  background-color: #B1C29E;
+  color: white;
+}
+
+.btn.archive {
+  background-color: #A6D0DD;
+  color: white;
+}
+
+.btn-icon.delete {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Add Buttons */
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Button Add to Queue */
+.btn.red {
+  text-decoration: none;
+  background-color: #FF6969;
+  color: white;
+}
+
+/* Button Add Appointment */
+.btn.blue {
+  text-decoration: none;
+  background-color: #A6D0DD;
+  color: white;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+/* End of Button Styles */
+
+/* Start of Modal Styles (for Add to Queue form) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#queueForm input {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+}
+/* End of Modal Styles */
