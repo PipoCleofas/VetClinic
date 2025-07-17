@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './login.css';
+import '../utils/login.css';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -22,11 +22,11 @@ const Login = () => {
   return (
     <div className="container">
       <div className="left-panel">
-        <img src="/images/pawsionate-logo.png" alt="Pawsionate Hands Logo" className="main-logo" />
+        <img src="../utils/images/pawsionate-logo.png" alt="Pawsionate Hands Logo" className="main-logo" />
       </div>
 
       <div className="right-panel">
-        <img src="/images/dog.webp" alt="Dog Emoji" className="dog-emoji" />
+        <img src="../utils/images/dog.webp" alt="Dog Emoji" className="dog-emoji" />
 
         <h1>Welcome Back!</h1>
         <p>Please enter your details</p>

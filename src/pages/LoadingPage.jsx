@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './style.css';
+import '../utils/style.css';
 import { useNavigate } from 'react-router-dom';
 
 const LoadingPage = () => {
@@ -16,7 +16,7 @@ const LoadingPage = () => {
   return (
     <div className="loading-page">
       {/* Logo */}
-      <img className="logo" src="/images/pawsionate-logo.png" alt="Pawsionate Hands Logo" />
+      <img className="logo" src="../utils/images/pawsionate-logo.png" alt="Pawsionate Hands Logo" />
 
       {/* Title */}
       <h1>Pawsionate Hands</h1>

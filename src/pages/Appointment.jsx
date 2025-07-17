@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './appointment.css'; // Make sure CSS is correctly placed
+import '../utils/appointment.css'; // Make sure CSS is correctly placed
 import { useNavigate } from 'react-router-dom';
 
 const Appointment = () => {
@@ -40,7 +40,7 @@ const Appointment = () => {
     <div>
       <header>
         <img
-          src="/images/pawsionate-logo.png"
+          src="../utils/images/pawsionate-logo.png"
           alt="Logo"
           className="logo"
           onClick={() => navigate('/landing_page')}

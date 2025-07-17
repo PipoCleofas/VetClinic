@@ -1,5 +1,5 @@
 import React from 'react';
-import './landing_page.css';
+import '../utils/landing_page.css';
 import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
@@ -26,7 +26,7 @@ const LandingPage = () => {
   return (
     <div>
       <header>
-        <img src="/images/pawsionate-logo.png" alt="Pawsionate Hands Logo" className="logo" />
+        <img src="../utils/images/pawsionate-logo.png" alt="Pawsionate Hands Logo" className="logo" />
 
         <ul className="nav-menu">
           <li className="active"><a href="/landing_page">Home</a></li>
@@ -39,7 +39,7 @@ const LandingPage = () => {
         <div className="user-greeting">
           <span>Hello, <strong>Username</strong>!</span>
           <a href="#" className="user-photo-link">
-            <img src="/images/user_icon.png" className="user-photo" alt="User Icon" />
+            <img src="../utils/images/user_icon.png" className="user-photo" alt="User Icon" />
           </a>
         </div>
       </header>

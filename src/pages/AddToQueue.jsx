@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './add_to_queue.css';
+import '../utils/add_to_queue.css';
 import { useNavigate } from 'react-router-dom';
 
 const AddToQueue = () => {
@@ -45,7 +45,7 @@ const AddToQueue = () => {
     <div>
       <header>
         <a href="/landing_page">
-          <img src="/images/pawsionate-logo.png" alt="Logo" className="logo" />
+          <img src="../utils/images/pawsionate-logo.png" alt="Logo" className="logo" />
         </a>
 
         <ul className="nav-menu">
@@ -58,7 +58,7 @@ const AddToQueue = () => {
 
         <div className="user">
           <a href="#">
-            <img src="/images/user_icon.png" className="user-photo" />
+            <img src="../utils/images/user_icon.png" className="user-photo" />
           </a>
         </div>
       </header>

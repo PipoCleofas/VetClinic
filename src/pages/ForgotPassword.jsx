@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './forgot-password.css';
+import '../utils/forgot-password.css';
 import { useNavigate } from 'react-router-dom';
 
 const ForgotPassword = () => {
@@ -27,7 +27,7 @@ const ForgotPassword = () => {
   return (
     <div className="forgot-body">
       <div className="forgot-container">
-        <img src="/images/pawsionate-logo.png" alt="Logo" className="logo" />
+        <img src="../utils/images/pawsionate-logo.png" alt="Logo" className="logo" />
         <h1>Forgot password?</h1>
 
         <form onSubmit={handleSubmit}>

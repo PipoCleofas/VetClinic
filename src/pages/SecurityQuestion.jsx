@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './security_question.css';
+import '../utils/security_question.css';
 import { useNavigate } from 'react-router-dom';
 
 const SecurityQuestion = () => {
@@ -22,7 +22,7 @@ const SecurityQuestion = () => {
 
   return (
     <div className="container">
-      <img src="/images/pawsionate-logo.png" alt="Logo" className="logo" />
+      <img src="../utils/images/pawsionate-logo.png" alt="Logo" className="logo" />
 
       <h1>
         Please answer your security

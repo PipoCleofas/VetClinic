@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './reset_password.css';
+import '../utils/reset_password.css';
 import { useNavigate } from 'react-router-dom';
 
 const ResetPassword = () => {
@@ -26,7 +26,7 @@ const ResetPassword = () => {
 
   return (
     <div className="reset-container reset-body">
-      <img src="/images/pawsionate-logo.png" alt="Logo" className="logo" />
+      <img src="../utils/images/pawsionate-logo.png" alt="Logo" className="logo" />
 
       <h1>Reset password.</h1>
 

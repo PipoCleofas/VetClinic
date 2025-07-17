@@ -1,5 +1,5 @@
 import React from 'react';
-import './file_maintenance.css';
+import '../utils/file_maintenance.css';
 import { useNavigate } from 'react-router-dom';
 
 const FileMaintenance = () => {
@@ -9,7 +9,7 @@ const FileMaintenance = () => {
     <div>
       <header>
         <img
-          src="/images/pawsionate-logo.png"
+          src="../utils/images/pawsionate-logo.png"
           alt="Logo"
           className="logo"
           onClick={() => navigate('/landing_page')}
@@ -26,7 +26,7 @@ const FileMaintenance = () => {
 
         <div className="user">
           <a href="#">
-            <img src="/images/user_icon.png" className="user-photo" alt="User Icon" />
+            <img src="../utils/images/user_icon.png" className="user-photo" alt="User Icon" />
           </a>
         </div>
       </header>
