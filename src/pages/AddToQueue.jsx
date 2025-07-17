@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../utils/add_to_queue.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const AddToQueue = () => {
   const [ownerName, setOwnerName] = useState('');
@@ -44,22 +44,22 @@ const AddToQueue = () => {
   return (
     <div>
       <header>
-        <a href="/landing_page">
+        <Link to="/landing_page">
           <img src="../utils/images/pawsionate-logo.png" alt="Logo" className="logo" />
-        </a>
+        </Link>
 
         <ul className="nav-menu">
-          <li><a href="/landing_page">Home</a></li>
-          <li><a href="/appointment">Appointment</a></li>
-          <li><a href="/medical_records">Medical Records</a></li>
-          <li><a href="/invoice">Invoice</a></li>
-          <li><a href="/file_maintenance">File Maintenance</a></li>
+          <li><Link to="/landing_page">Home</Link></li>
+          <li><Link to="/appointment">Appointment</Link></li>
+          <li><Link to="/medical_records">Medical Records</Link></li>
+          <li><Link to="/invoice">Invoice</Link></li>
+          <li><Link to="/file_maintenance">File Maintenance</Link></li>
         </ul>
 
         <div className="user">
-          <a href="#">
-            <img src="../utils/images/user_icon.png" className="user-photo" />
-          </a>
+          <Link to="#">
+            <img src="../utils/images/user_icon.png" className="user-photo" alt="User" />
+          </Link>
         </div>
       </header>
 

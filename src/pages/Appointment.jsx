@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../utils/appointment.css'; // Make sure CSS is correctly placed
-import { useNavigate } from 'react-router-dom';
+import '../utils/appointment.css';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Appointment = () => {
   const [sortOrder, setSortOrder] = useState('Newest to oldest');
@@ -23,12 +23,12 @@ const Appointment = () => {
 
   const handleSortChange = (e) => {
     setSortOrder(e.target.value);
-    // You can implement actual sorting logic here if connected to backend or state
+    // Add actual sorting logic if needed
   };
 
   const handleAddToQueue = (name) => {
     alert(`${name} added to queue.`);
-    // Add actual logic here
+    // Add to queue logic
   };
 
   const handleEdit = (name) => {
@@ -39,26 +39,26 @@ const Appointment = () => {
   return (
     <div>
       <header>
-        <img
-          src="../utils/images/pawsionate-logo.png"
-          alt="Logo"
-          className="logo"
-          onClick={() => navigate('/landing_page')}
-          style={{ cursor: 'pointer' }}
-        />
+        <Link to="/landing_page">
+          <img
+            src="/images/pawsionate-logo.png"
+            alt="Logo"
+            className="logo"
+          />
+        </Link>
 
         <ul className="nav-menu">
-          <li><a href="/landing_page">Home</a></li>
-          <li className="active"><a href="/appointment">Appointment</a></li>
-          <li><a href="/medical_records">Medical Records</a></li>
-          <li><a href="/invoice">Invoice</a></li>
-          <li><a href="/file_maintenance">File Maintenance</a></li>
+          <li><Link to="/landing_page">Home</Link></li>
+          <li className="active"><Link to="/appointment">Appointment</Link></li>
+          <li><Link to="/medical_records">Medical Records</Link></li>
+          <li><Link to="/invoice">Invoice</Link></li>
+          <li><Link to="/file_maintenance">File Maintenance</Link></li>
         </ul>
 
         <div className="user">
-          <a href="#">
+          <Link to="#">
             <img src="/images/user_icon.png" className="user-photo" alt="User Icon" />
-          </a>
+          </Link>
         </div>
       </header>
 

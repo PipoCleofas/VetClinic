@@ -1,6 +1,6 @@
 import React from 'react';
 import '../utils/landing_page.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -20,27 +20,28 @@ const LandingPage = () => {
 
   const handleAction = (action, name) => {
     alert(`${action} for ${name}`);
-    // Add logic to update backend or state
   };
 
   return (
     <div>
       <header>
-        <img src="../utils/images/pawsionate-logo.png" alt="Pawsionate Hands Logo" className="logo" />
+        <Link to="/landing_page">
+          <img src="/images/pawsionate-logo.png" alt="Pawsionate Hands Logo" className="logo" />
+        </Link>
 
         <ul className="nav-menu">
-          <li className="active"><a href="/landing_page">Home</a></li>
-          <li><a href="/appointment">Appointment</a></li>
-          <li><a href="/medical_records">Medical Records</a></li>
-          <li><a href="/invoice">Invoice</a></li>
-          <li><a href="/file_maintenance">File Maintenance</a></li>
+          <li className="active"><Link to="/landing_page">Home</Link></li>
+          <li><Link to="/appointment">Appointment</Link></li>
+          <li><Link to="/medical_records">Medical Records</Link></li>
+          <li><Link to="/invoice">Invoice</Link></li>
+          <li><Link to="/file_maintenance">File Maintenance</Link></li>
         </ul>
 
         <div className="user-greeting">
           <span>Hello, <strong>Username</strong>!</span>
-          <a href="#" className="user-photo-link">
-            <img src="../utils/images/user_icon.png" className="user-photo" alt="User Icon" />
-          </a>
+          <Link to="#" className="user-photo-link">
+            <img src="/images/user_icon.png" className="user-photo" alt="User Icon" />
+          </Link>
         </div>
       </header>
 

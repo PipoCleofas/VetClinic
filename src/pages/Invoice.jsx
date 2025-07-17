@@ -1,37 +1,34 @@
 import React from 'react';
 import '../utils/invoice.css';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Invoice = () => {
-  const navigate = useNavigate();
-
   return (
     <div>
       <header>
-        <img
-          src="../utils/images/pawsionate-logo.png"
-          alt="Logo"
-          className="logo"
-          onClick={() => navigate('/landing_page')}
-          style={{ cursor: 'pointer' }}
-        />
+        <Link to="/landing_page">
+          <img
+            src="/images/pawsionate-logo.png"
+            alt="Logo"
+            className="logo"
+          />
+        </Link>
 
         <ul className="nav-menu">
-          <li><a href="/landing_page">Home</a></li>
-          <li><a href="/appointment">Appointment</a></li>
-          <li><a href="/medical_records">Medical Records</a></li>
-          <li className="active"><a href="/invoice">Invoice</a></li>
-          <li><a href="/file_maintenance">File Maintenance</a></li>
+          <li><Link to="/landing_page">Home</Link></li>
+          <li><Link to="/appointment">Appointment</Link></li>
+          <li><Link to="/medical_records">Medical Records</Link></li>
+          <li className="active"><Link to="/invoice">Invoice</Link></li>
+          <li><Link to="/file_maintenance">File Maintenance</Link></li>
         </ul>
 
         <div className="user">
-          <a href="#">
-            <img src="../utils/images/user_icon.png" className="user-photo" alt="User Icon" />
-          </a>
+          <Link to="#">
+            <img src="/images/user_icon.png" className="user-photo" alt="User Icon" />
+          </Link>
         </div>
       </header>
 
-      {/* You can add invoice form or table here */}
       <main>
         <section className="invoice-section">
           <h2>Invoices</h2>
